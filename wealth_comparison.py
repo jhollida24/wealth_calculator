@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def calculate_real_estate(savings, property_price=None, rent, mortgage_rate=0.05, appreciation_rate=0.03, tax_rate=0.015, insurance_rate=0.005, maintenance_rate=0.01, years=30):
+def calculate_real_estate(savings, property_price, rent, mortgage_rate=0.05, appreciation_rate=0.03, tax_rate=0.015, insurance_rate=0.005, maintenance_rate=0.01, years=30):
     if property_price:
         down_payment = max(0.05 * property_price, savings)  # Minimum 5% down payment or all savings
     else:
